@@ -9,7 +9,7 @@ Open VS Code and open the repo directory.
 In the VS Code terminal run the following to create a new python virtual environment:  
 ```
 py -3.11 -m venv .venv
-
+```
 windows
 ```
 .\.venv\Scripts\activate
@@ -18,7 +18,10 @@ mac or linux
 ```
 source .venv/bin/activate
 ```
-
+then
+```
 pip install -r requirements.txt
 ```
+```
 streamlit run chatbot.py
+```
