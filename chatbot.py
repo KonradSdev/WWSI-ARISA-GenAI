@@ -1,0 +1,168 @@
+import time
+import uuid
+import streamlit as st
+from datetime import datetime
+
+# Set page configuration
+st.set_page_config(
+    page_title="Your travel assistant - NomadAI",
+    page_icon="🤖👨‍🚀🚀",
+    layout="centered"
+)
+
+# Custom CSS for better chat appearance
+st.markdown("""
+<style>
+    .user-message {
+        background-color: #666666;
+        padding: 10px 15px;
+        border-radius: 15px 15px 0 15px;
+        margin: 5px 0;
+        max-width: 80%;
+        align-self: flex-end;
+        float: right;
+        clear: both;
+    }
+    .ai-message {
+        background-color: #252525;
+        padding: 10px 15px;
+        border-radius: 15px 15px 15px 0;
+        margin: 5px 0;
+        max-width: 80%;
+        align-self: flex-start;
+        float: left;
+        clear: both;
+    }
+    .chat-container {
+        padding: 20px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .message-container {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+# list of created chats (history)
+if "chats" not in st.session_state:
+    st.session_state["chats"]  = [
+       {
+           "conversation_id": uuid.uuid4(),
+           "header": "Gdzie pojechać...",
+           "create_date": "2025-03-01T12:00:00Z",
+           "history": [
+               {
+                     "role": "user",
+                     "content": "Gdzie pojechać na wakacje?",
+                     "create_date": "2025-03-01T12:00:00Z"
+                },
+                {
+                     "role": "assistant",
+                     "content": "Na wakacje polecam wybrać się do Grecji lub Hiszpanii. Oba kraje oferują piękne plaże i wiele atrakcji turystycznych.",
+                     "create_date": "2025-03-01T12:00:00Z"
+               }
+           ]
+       },
+       {
+           "conversation_id": uuid.uuid4(),
+           "header": "Gdzie tanie loty?",
+           "create_date": "2025-03-02T12:00:00Z",
+       }
+    ]
+
+def create_new_chat(default_header="New conversation"):
+    new_chat = {
+        "conversation_id": uuid.uuid4(),
+        "header": default_header if len(default_header) <= 30 else default_header[:30] + "...",
+        "create_date": datetime.now().isoformat(),
+        "history": []
+    }
+    st.session_state["chats"].append(new_chat)
+    st.session_state["current_chat"] = new_chat    
+
+def chatbot_response(user_input, conversation_id):
+    # Simulate a response from the chatbot
+    response = {
+        "conversation_id": conversation_id,
+        "response": f"Assistant: {user_input}"
+    }
+    return response
+
+######################################################################################################
+# Sidebar for chat history and new conversation creation
+with st.sidebar:
+    st.header("NomadAI", divider=True)
+    if st.button("Create new conversation"):
+        create_new_chat()
+    st.header("Chat history")
+    sorted_chats = sorted(st.session_state["chats"], key=lambda x: x["create_date"], reverse=True)
+    for chat in sorted_chats:
+        if st.button(f"{chat['header']}", key=chat["conversation_id"]):
+            st.session_state["current_chat"] = chat
+            st.rerun()
+
+#####################################################################################################
+# Main chat area
+st.title("Your travel assistant - NomadAI")
+st.write("Hello traveler! I am your travel assistant. How can I help you today?")
+
+with st.container():
+    messages_html = '<div class="chat-messages">'
+    if "current_chat" in st.session_state:
+        # Display chat messages
+        if "history" in st.session_state["current_chat"]:
+            for message in st.session_state["current_chat"]["history"]:
+                role = message["role"]
+                content = message["content"]
+
+                with st.container():
+                    if role == "human":
+                        messages_html += f'<div class="message-container"><div class="user-message">{content}</div></div>'
+                    else:
+                        messages_html += f'<div class="message-container"><div class="ai-message">{content}</div></div>'
+
+    st.markdown(messages_html, unsafe_allow_html=True)
+    # Input for new message
+    with st.container():
+        user_input = st.chat_input("Type your message here...")
+
+        if user_input:
+            if "current_chat" not in st.session_state:
+                create_new_chat(user_input)
+            else:
+                # Check if the current chat is empty
+                if not st.session_state["current_chat"]["history"]:
+                    st.session_state["current_chat"]["header"] = user_input[:30] + "..." if len(user_input) > 30 else user_input
+
+            # Add user message to the display
+            st.session_state["current_chat"]["history"].append({"role": "human", "content": user_input, "create_date": datetime.now().isoformat()})
+
+            # Create a placeholder for the AI's response
+            with st.chat_message("assistant"):
+                message_placeholder = st.empty()
+                message_placeholder.markdown("Thinking...")
+
+                # Get response from the chatbot
+                response = chatbot_response(user_input, st.session_state["current_chat"]["conversation_id"])
+
+                # Save the conversation ID
+                st.session_state["current_chat"]["conversation_id"] = response["conversation_id"]
+
+                # Add AI message to the display
+                st.session_state["current_chat"]["history"].append({"role": "assistant", "content": response["response"], "create_date": datetime.now().isoformat()})
+
+                # Display typing effect
+                full_response = response["response"]
+                simulated_response = ""
+
+                for chunk in full_response.split():
+                    simulated_response += chunk + " "
+                    message_placeholder.markdown(simulated_response + "▌")
+                    time.sleep(0.2)
+
+                st.rerun()
+###################################################################################################################
