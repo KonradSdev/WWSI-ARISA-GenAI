@@ -1,0 +1,1294 @@
+[
+    {
+      "question": "What is the baggage allowance for flights within Europe?",
+      "answer": "The allowance varies by airline and ticket class, but typically economy includes one carry-on and one checked bag up to 23 kg. Check your ticket for details.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Can I bring my pet on board for flights in the Middle East?",
+      "answer": "Most airlines allow small pets in the cabin if they meet size and weight restrictions. Contact customer service for specific rules and fees.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Do I need a passport for domestic flights within the same country?",
+      "answer": "For most European and Middle Eastern countries, an official photo ID is required for domestic flights. A valid passport is often the safest bet.",
+      "category": "air-travel"
+    },
+    {
+      "question": "How early should I arrive at the airport for international flights?",
+      "answer": "We recommend arriving at least 3 hours before an international flight to allow enough time for check-in and security procedures.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Are there direct flights from Europe to major Middle Eastern cities?",
+      "answer": "Yes, major hubs in Europe offer direct flights to cities like Dubai, Abu Dhabi, Doha, Riyadh, etc. Availability depends on the airline and season.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Can I check in online for flights booked through your website?",
+      "answer": "Yes, most partner airlines allow online check-in. You’ll typically receive a link or be able to check in directly on the airline's site.",
+      "category": "air-travel"
+    },
+    {
+      "question": "What travel documents are required for flights between Europe and the Middle East?",
+      "answer": "A valid passport is required. Visa requirements vary based on nationality and destination. Check official immigration sites before traveling.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Can I upgrade my seat after booking a flight?",
+      "answer": "Yes, many airlines let you upgrade by paying the difference or using points. Contact support or the airline directly for options.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Is there a charge for selecting a specific seat on the plane?",
+      "answer": "Some airlines offer free seat selection, while others charge a fee for premium seats or advanced selection. Policies vary by airline.",
+      "category": "air-travel"
+    },
+    {
+      "question": "What if my flight is delayed or canceled?",
+      "answer": "Airlines generally offer rebooking or refunds in cases of cancellations. For delays, you may be entitled to compensation depending on local regulations.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Can I use electronic boarding passes, or do I need a paper one?",
+      "answer": "Most airlines now accept electronic boarding passes on a smartphone. Paper passes are still available if you prefer.",
+      "category": "air-travel"
+    },
+    {
+      "question": "How do I request special assistance for a flight?",
+      "answer": "During booking, you can indicate if you need wheelchair assistance or other help. It's best to inform us or the airline in advance.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Are there any restrictions on carrying liquids onboard flights?",
+      "answer": "Yes, liquids in carry-on luggage are limited to 100 ml per container, packed in a clear, resealable plastic bag. This rule applies in most regions.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Does the airfare include airport taxes and fees?",
+      "answer": "All mandatory taxes and fees are included in our displayed ticket price. You’ll see a breakdown before confirming payment.",
+      "category": "air-travel"
+    },
+    {
+      "question": "What happens if I miss my connecting flight?",
+      "answer": "If both flights are on the same ticket, the airline typically rebooks you on the next available flight. Contact the airline desk immediately.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Can I bring duty-free items in addition to my carry-on baggage?",
+      "answer": "Yes, duty-free purchases are generally permitted in addition to your carry-on, subject to airport security regulations.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Do you offer group flight bookings for more than 10 travelers?",
+      "answer": "Yes, we have group rates for large parties. Contact our group bookings department for assistance and special offers.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Is Wi-Fi available on flights?",
+      "answer": "Some airlines offer inflight Wi-Fi, but availability and speed vary. Check the airline's details when booking.",
+      "category": "air-travel"
+    },
+    {
+      "question": "How do I check the status of my flight?",
+      "answer": "You can check your flight status online using the airline’s website or app. We also send updates via email or SMS if there are changes.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Are there specific Covid-19 protocols I need to follow?",
+      "answer": "Health protocols vary per country and airline. Check current guidelines on testing, masks, and vaccinations for your specific route.",
+      "category": "air-travel"
+    },
+    {
+      "question": "What is the refund policy if I cancel my flight?",
+      "answer": "Refund policies depend on fare type. Some tickets are fully refundable, while others have penalties or are nonrefundable.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Can I earn frequent flyer miles through your booking platform?",
+      "answer": "Yes, you can add your frequent flyer number during booking. Miles will be credited according to the airline’s program.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Is online check-in mandatory?",
+      "answer": "It’s not mandatory, but it's highly recommended to avoid queues at the airport. Some low-cost airlines might charge fees for airport check-in.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Do I need travel insurance for short flights within Europe?",
+      "answer": "Travel insurance is optional but recommended for any flight in case of unexpected cancellations, medical emergencies, or lost baggage.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Can I bring sports equipment such as skis or golf clubs?",
+      "answer": "Yes, but it often requires special handling and fees. Inform the airline beforehand to ensure a smooth check-in process.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Can I change the date of my flight after booking?",
+      "answer": "Most airlines allow date changes with a fee, depending on your fare type. Contact customer support or manage your booking online.",
+      "category": "air-travel"
+    },
+    {
+      "question": "What if I have a medical condition and need extra oxygen on the plane?",
+      "answer": "You must notify the airline in advance and may need a medical certificate. Each airline has specific guidelines for onboard oxygen.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Are there student discounts on flights?",
+      "answer": "Some airlines offer discounted fares for students. Contact us or check the airline’s website for eligibility and how to apply.",
+      "category": "air-travel"
+    },
+    {
+      "question": "How do I get a seat for my infant on a plane?",
+      "answer": "Infants under 2 can fly on a lap seat at a reduced fare, or you can purchase an additional seat if you prefer a car seat onboard.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Can I request a special meal on the flight?",
+      "answer": "Yes, airlines offer meal preferences like vegetarian, vegan, halal, kosher, or gluten-free. Request these during booking or at least 24 hours in advance.",
+      "category": "air-travel"
+    },
+    {
+      "question": "What are the rules for unaccompanied minors traveling by air?",
+      "answer": "Airlines typically offer a special service for children traveling alone. Age limits and fees vary; please check the specific airline policy.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Is there a limit to how many electronic devices I can bring on the plane?",
+      "answer": "There’s no strict limit, but all devices must fit in your carry-on and go through security screening. Large electronics may require separate checks.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Why was my credit card declined when I tried to book a flight?",
+      "answer": "There could be insufficient funds, a security block by your bank, or a mismatch in billing address. Contact your bank or retry with correct details.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Are there any additional fees for printing boarding passes at the airport?",
+      "answer": "Some low-cost carriers charge a fee if you fail to check in online. Traditional airlines generally offer free check-in at the airport.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Can I reserve exit-row seats for more legroom?",
+      "answer": "Yes, you can often pay extra for exit-row seating, provided you meet safety requirements. Confirm availability at booking or check-in.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Do I need a visa to transit through a European airport?",
+      "answer": "Transit visa requirements depend on your nationality and the country of transit. Consult the embassy or official immigration website.",
+      "category": "air-travel"
+    },
+    {
+      "question": "What if my baggage is lost or damaged?",
+      "answer": "You must report it to the airline's baggage service desk immediately. Keep your baggage tags. The airline will start a tracking process and may compensate you.",
+      "category": "air-travel"
+    },
+    {
+      "question": "How can I add flight extras like priority boarding?",
+      "answer": "After booking, you can manage your reservation on the airline’s website or contact us. Priority boarding usually incurs a small fee.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Are there any restrictions on bringing drones in checked luggage?",
+      "answer": "Policies vary by airline, but drones are generally allowed in carry-on if batteries are under certain watt-hours. Check with your airline.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Can I earn points with more than one airline loyalty program on a single ticket?",
+      "answer": "No, you must choose one frequent flyer program for each ticket. However, some programs are part of alliances and you can collect reciprocal miles.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Is it possible to hold a flight reservation without immediate payment?",
+      "answer": "Some airlines allow a short hold for a fee or free for a limited time. This feature isn't available with all carriers.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Do you assist with visa letters or flight itineraries for visa applications?",
+      "answer": "We can provide a booking confirmation, which some embassies accept. For official visa letters, you may need to contact the airline directly.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Can I purchase carbon offsets for my flight?",
+      "answer": "Many airlines now offer carbon offset programs. You can opt in during booking or use a third-party service for offsets.",
+      "category": "air-travel"
+    },
+    {
+      "question": "What if my first and last names are reversed on the ticket?",
+      "answer": "Name changes or corrections can usually be made with a fee. It's crucial to have the correct name as per your passport or ID.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Can I transport musical instruments as carry-on luggage?",
+      "answer": "Small instruments like violins or guitars may be allowed as carry-ons if they fit overhead compartments. Larger instruments may require special handling.",
+      "category": "air-travel"
+    },
+    {
+      "question": "How do I claim compensation for flight delays or cancellations?",
+      "answer": "Compensation depends on airline policies and local regulations (like EU 261). Contact the airline’s customer service for claims.",
+      "category": "air-travel"
+    },
+    {
+      "question": "What is the difference between economy, premium economy, business, and first class?",
+      "answer": "These classes differ in seat comfort, legroom, service level, and amenities. Costs rise accordingly from economy to first class.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Is there in-flight entertainment on short-haul flights?",
+      "answer": "Many short-haul flights have limited or no in-flight entertainment. Check the airline’s details for seat-back screens or streaming options.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Can I change the passenger name on a plane ticket?",
+      "answer": "Most airlines don’t allow passenger name changes. If permitted, it may incur a significant fee. Verify with our support team or the airline.",
+      "category": "air-travel"
+    },
+    {
+      "question": "Is it cheaper to book a round-trip flight or a one-way flight?",
+      "answer": "Round-trip fares are typically cheaper than separate one-way tickets, but it depends on airline promotions and schedules.",
+      "category": "air-travel"
+    },
+  
+    {
+      "question": "How do I find and book budget-friendly hotels in Europe?",
+      "answer": "Use our search filters to set your preferred price range. We also feature special deals for travelers looking for budget hotels.",
+      "answer": "hotels-and-booking",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "What is the check-in time for most European hotels?",
+      "answer": "Standard check-in time is usually 2:00 PM or 3:00 PM. Late arrivals can be arranged by contacting the hotel directly.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Can I book a hotel and flight package together?",
+      "answer": "Yes, we offer bundle deals for flights and hotels, which often provides better rates than booking separately.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Do hotels in the Middle East typically accept cash in local currency?",
+      "answer": "Most hotels accept local currency (like AED or SAR), and many also accept major credit cards. Check with the hotel for accepted payment methods.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "What is the cancellation policy for hotel reservations?",
+      "answer": "Policies vary by property. Some offer free cancellation up to 24 or 48 hours before check-in, while others may be nonrefundable.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Can I earn hotel loyalty points by booking through your platform?",
+      "answer": "Yes, if the hotel chain honors bookings made through our site. Remember to provide your loyalty program details during booking or check-in.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Are there any special rates for long-term hotel stays?",
+      "answer": "Many hotels offer discounted monthly or extended-stay rates. Filter for 'long stay' options or contact us for assistance.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "What should I do if I arrive at the hotel late at night?",
+      "answer": "Inform the hotel in advance if you’ll have a late check-in, so they keep your room and make arrangements for a smooth arrival.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Are there child-friendly or family hotel options?",
+      "answer": "Yes, many hotels offer family rooms, babysitting services, and kids’ clubs. Use our family-friendly filter or contact us for suggestions.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Can I request connecting rooms for my family?",
+      "answer": "Yes, many hotels provide connecting or adjacent rooms. Request this during booking or contact the hotel directly to confirm availability.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "How do I book a hotel with wheelchair access?",
+      "answer": "Most hotels list accessibility features. Filter for 'accessible rooms' or check the hotel’s details for specifics before booking.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Is breakfast included in the hotel price?",
+      "answer": "It depends on the rate plan you choose. Some rates include breakfast, while others do not. Check the booking details for meal inclusion.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Do hotels in Europe charge a city tax or tourist tax?",
+      "answer": "Yes, many European cities charge a small nightly tax per guest. It’s usually paid directly at the hotel during check-in or checkout.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Can I pay in installments for my hotel booking?",
+      "answer": "Some hotels or payment platforms allow installment payments. If available, you’ll see an option during checkout or can contact us for help.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Can I book multiple rooms at once?",
+      "answer": "Yes, you can select multiple rooms in a single reservation. Ensure you indicate the correct number of guests for each room.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Is an early check-in possible?",
+      "answer": "Early check-in is subject to availability. Some hotels allow it for free, others charge a fee. Contact the hotel directly to confirm.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "How do I change the dates of my existing hotel reservation?",
+      "answer": "You can manage your booking online or call us. Date changes depend on availability and may incur additional charges.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Is a credit card necessary for hotel booking?",
+      "answer": "Most hotels require a credit card guarantee, but some allow bank transfers or pay-on-arrival options. Check the specific hotel’s policy.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Do hotels in the Middle East have different check-out times during Ramadan?",
+      "answer": "Policies can vary during Ramadan, but standard check-out time remains 12:00 PM. Contact the hotel for any special accommodations.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "What if I need a crib or extra bed for my child?",
+      "answer": "Many hotels offer cribs or rollaway beds for an extra fee. Request these in advance to ensure availability.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "How do I find a hotel that allows pets?",
+      "answer": "Use the ‘pet-friendly’ filter in our hotel search or check the hotel’s policy section to see if pets are allowed.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Can I book a room for someone else with my credit card?",
+      "answer": "Yes, but some hotels require the cardholder’s ID or a credit card authorization form. It’s best to contact the hotel in advance.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Are there any hidden fees like resort fees or service charges?",
+      "answer": "Some properties add resort or service fees. We display all known fees before finalizing the booking, but local fees may apply upon arrival.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Is there a way to view room photos before booking?",
+      "answer": "Yes, our platform shows photos of each room type. Check the property’s photo gallery or room details section before confirming.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Can I book a hostel or a B&B through your site?",
+      "answer": "Yes, our listings include a variety of accommodations such as hostels, B&Bs, guesthouses, and luxury hotels.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "What does ‘non-refundable rate’ mean?",
+      "answer": "A non-refundable rate typically means you cannot get a refund if you cancel. These rates are usually cheaper than flexible options.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "How do I redeem a hotel coupon or discount code?",
+      "answer": "Enter the coupon code at checkout on our website. The discount will be applied if the code is valid for the selected property.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Will the hotel hold my luggage if I arrive early?",
+      "answer": "Most hotels offer luggage storage for early arrivals or late departures. Contact the front desk for assistance.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Are airport transfers included with my hotel booking?",
+      "answer": "Not usually, unless stated in the booking package or as a hotel amenity. Some hotels may offer free shuttle services; check the property’s details.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "How do I check if Wi-Fi is free in the hotel?",
+      "answer": "We list hotel amenities on our site, which includes Wi-Fi information. Some hotels offer it for free, while others charge a daily fee.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Can I extend my stay at the hotel after arrival?",
+      "answer": "Yes, subject to availability. You can request an extension at the front desk or through our platform if rooms are still available.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "What if the hotel asks me for a deposit at check-in?",
+      "answer": "Many hotels require a deposit for incidentals, usually via credit card hold. It’s refunded at checkout if there are no extra charges.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Are there smoking and non-smoking rooms available?",
+      "answer": "Some hotels offer both options, while many are entirely smoke-free. Check the room details or use the filter to find smoking rooms if available.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "I’ve booked a hotel, but I didn’t get a confirmation email. What should I do?",
+      "answer": "First, check your spam folder. If you still can’t find it, contact our support with your booking reference so we can resend it.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Can I pay for the hotel in cash when I arrive?",
+      "answer": "Some hotels allow pay-on-arrival, but you typically still need a credit card for a reservation guarantee. Check the payment policy during booking.",
+      "category": "hotels-and-booking"
+    },
+    {
+      "question": "Is it safe to book a hotel online through your site?",
+      "answer": "Yes, we use secure payment gateways and comply with data protection regulations to ensure your personal information is safe.",
+      "category": "hotels-and-booking"
+    },
+  
+    {
+      "question": "What local dishes should I try when traveling in the Middle East?",
+      "answer": "Popular dishes include hummus, falafel, shawarma, and tabbouleh. Each region has its own specialties, so explore local restaurants!",
+      "category": "food"
+    },
+    {
+      "question": "Are there vegetarian dining options in Europe?",
+      "answer": "Yes, most European cities have a variety of vegetarian and vegan restaurants. Check online guides or ask your hotel concierge for recommendations.",
+      "category": "food"
+    },
+    {
+      "question": "Can I get gluten-free meals at hotels?",
+      "answer": "Many hotels now offer gluten-free meals upon request. Inform them in advance to ensure proper meal preparation.",
+      "category": "food"
+    },
+    {
+      "question": "How can I find halal restaurants in European cities?",
+      "answer": "Use online resources or local guides that list halal-certified eateries. Many popular European cities have dedicated halal districts.",
+      "category": "food"
+    },
+    {
+      "question": "Is tap water safe to drink in most parts of Europe?",
+      "answer": "Yes, tap water is generally safe across Europe. However, in some regions you might prefer bottled water for taste or local advisories.",
+      "category": "food"
+    },
+    {
+      "question": "Do hotels offer special dietary menus (e.g., kosher)?",
+      "answer": "Some hotels do, especially in major cities or areas with large Jewish communities. It’s best to inquire beforehand for availability.",
+      "category": "food"
+    },
+    {
+      "question": "Are tips included in the bill at restaurants in the Middle East?",
+      "answer": "Many restaurants include a service charge, but it’s still customary to leave a small tip if service was good. Check the bill for details.",
+      "category": "food"
+    },
+    {
+      "question": "Where can I try authentic local food in smaller European towns?",
+      "answer": "Look for family-run eateries or ask locals for hidden gems. Tourist centers can be pricey and less authentic.",
+      "category": "food"
+    },
+    {
+      "question": "Can I bring packaged food back to my home country?",
+      "answer": "That depends on customs regulations in your home country. Generally, sealed, non-perishable items are allowed, but always check official guidelines.",
+      "category": "food"
+    },
+    {
+      "question": "What are typical dining hours in Spain and other Mediterranean countries?",
+      "answer": "Lunch is often between 1:00–3:00 PM and dinner around 8:00–10:00 PM. Restaurants may open later than in other parts of Europe.",
+      "category": "food"
+    },
+    {
+      "question": "How can I find the best street food in Middle Eastern markets?",
+      "answer": "Ask locals for popular stalls or vendors with high turnover. Market tours are also available to guide you through must-try spots.",
+      "category": "food"
+    },
+    {
+      "question": "What if I have a severe nut allergy while traveling?",
+      "answer": "Inform restaurants and hotels about your allergy. Learn basic phrases in the local language to communicate allergies to staff clearly.",
+      "category": "food"
+    },
+    {
+      "question": "Are there any Michelin-star restaurants in the Middle East?",
+      "answer": "Michelin has not fully expanded its guide to all Middle Eastern countries yet, but many world-renowned chefs operate restaurants in major cities.",
+      "category": "food"
+    },
+    {
+      "question": "Can I book a food tour through your platform?",
+      "answer": "Yes, we partner with local tour providers offering culinary experiences. Check ‘extra-activities’ or ‘tours’ in our activities section.",
+      "category": "food"
+    },
+    {
+      "question": "Is it common to share mezzes or appetizers in Middle Eastern restaurants?",
+      "answer": "Absolutely. Sharing dishes like hummus, baba ganoush, and tabbouleh is very common and part of the dining culture.",
+      "category": "food"
+    },
+    {
+      "question": "Are there child-friendly restaurants where I can travel with toddlers?",
+      "answer": "Yes, many eateries in Europe and the Middle East are family-friendly. Look for kids’ menus, high chairs, and play areas.",
+      "category": "food"
+    },
+    {
+      "question": "What is the legal drinking age in most European countries?",
+      "answer": "It varies from 16 to 18 for beer/wine and 18 for spirits in many countries. Always check local laws regarding alcohol consumption.",
+      "category": "food"
+    },
+    {
+      "question": "How do I handle cultural dining customs in the Middle East?",
+      "answer": "Learn basic etiquette, like eating with the right hand and removing shoes in certain places. Observing local diners is also a good guide.",
+      "category": "food"
+    },
+    {
+      "question": "Is it safe to try street food in Europe?",
+      "answer": "Street food in Europe is generally safe. Look for popular stalls with high turnover and good reviews for extra assurance.",
+      "category": "food"
+    },
+    {
+      "question": "What are typical breakfast foods in the Middle East?",
+      "answer": "Common items include pita bread, labneh, olives, cheese, za'atar, and foul medames (a stewed bean dish).",
+      "category": "food"
+    },
+    {
+      "question": "Are there any strict meal times during Ramadan?",
+      "answer": "During Ramadan, Muslims fast from dawn to sunset. Many restaurants adjust their hours, but hotels typically still serve non-fasting guests.",
+      "category": "food"
+    },
+    {
+      "question": "Can I request a custom meal plan for health reasons at my hotel?",
+      "answer": "Many hotels accommodate dietary needs with advanced notice. Provide details at the time of booking and follow up with the hotel directly.",
+      "category": "food"
+    },
+    {
+      "question": "How can I find local farmers’ markets in European cities?",
+      "answer": "Check city tourism websites or ask at your hotel. Many cities have weekly markets featuring fresh produce and local specialties.",
+      "category": "food"
+    },
+    {
+      "question": "Is it polite to haggle over restaurant bills in the Middle East?",
+      "answer": "No, restaurant bills are usually fixed. Haggling is common in markets for goods, not in restaurants.",
+      "category": "food"
+    },
+    {
+      "question": "Is free tap water available at restaurants in Europe?",
+      "answer": "Some countries offer free tap water upon request, while others prefer selling bottled water. Policies vary, so ask the server.",
+      "category": "food"
+    },
+    {
+      "question": "Are credit cards widely accepted in restaurants?",
+      "answer": "Yes, most eateries in Europe and major Middle Eastern cities accept credit cards. Small local spots may still prefer cash.",
+      "category": "food"
+    },
+    {
+      "question": "Can I learn to cook local cuisine while traveling?",
+      "answer": "Yes, many destinations offer cooking classes or culinary workshops. Look for these under our ‘extra-activities’ section.",
+      "category": "food"
+    },
+    {
+      "question": "How do I avoid tourist trap restaurants?",
+      "answer": "Avoid places with aggressive greeters or multi-language menus marked ‘tourist menu.’ Research local recommendations for authentic experiences.",
+      "category": "food"
+    },
+    {
+      "question": "Are there certain foods prohibited in some Middle Eastern countries?",
+      "answer": "Yes, pork and alcohol are restricted in certain regions. Always check local regulations and religious customs.",
+      "category": "food"
+    },
+    {
+      "question": "What is typical European cuisine like?",
+      "answer": "Europe is diverse, but staples include bread, cheese, meat, pasta, and seafood. Each country has distinct flavors and regional dishes.",
+      "category": "food"
+    },
+    {
+      "question": "Can I bring my own snacks on flights?",
+      "answer": "Yes, solid snacks are generally allowed, but check customs regulations if you’re entering another country. Liquids and gels have volume limits.",
+      "category": "food"
+    },
+    {
+      "question": "Are Middle Eastern spices commonly available in local markets?",
+      "answer": "Yes, markets in places like Istanbul or Dubai offer a huge variety of spices. It’s an integral part of Middle Eastern cooking.",
+      "category": "food"
+    },
+    {
+      "question": "Is there a dress code for dining in upscale restaurants?",
+      "answer": "Some high-end establishments require smart casual or formal attire. Always check in advance to avoid being turned away.",
+      "category": "food"
+    },
+    {
+      "question": "How do I order coffee in Europe without confusion?",
+      "answer": "Coffee culture varies by country. For instance, in Italy, a ‘caffè’ is espresso. Research local names or ask staff for what you want.",
+      "category": "food"
+    },
+    {
+      "question": "Where can I find the best seafood in Europe?",
+      "answer": "Coastal regions like Portugal, Spain, Greece, and Italy are famous for seafood. Look for fresh catches and local specialties.",
+      "category": "food"
+    },
+    {
+      "question": "Are restaurants open during prayer times in the Middle East?",
+      "answer": "Most remain open, but some smaller or family-run places may close briefly. Check local customs, especially during Ramadan.",
+      "category": "food"
+    },
+    {
+      "question": "How do I book a table at a Michelin-starred restaurant?",
+      "answer": "Reservations can often be made online or by phone. Book well in advance, especially for highly sought-after venues.",
+      "category": "food"
+    },
+    {
+      "question": "Can hotels accommodate strict vegan diets?",
+      "answer": "Yes, many hotels and restaurants offer vegan options. Inform the hotel or restaurant ahead of time for a wider range of choices.",
+      "category": "food"
+    },
+    {
+      "question": "Do you offer any culinary-themed tours?",
+      "answer": "Yes, check our ‘extra-activities’ section for gastronomic tours, winery visits, and cooking workshops in various destinations.",
+      "category": "food"
+    },
+    {
+      "question": "Can I carry homemade food items in my checked baggage?",
+      "answer": "You can usually pack solid, non-perishable items. However, certain foods may be restricted by customs rules in your destination.",
+      "category": "food"
+    },
+    {
+      "question": "Are all-inclusive meal packages available at resorts?",
+      "answer": "Yes, some resorts in Europe and the Middle East offer all-inclusive plans covering meals, snacks, and drinks. Check details before booking.",
+      "category": "food"
+    },
+    {
+      "question": "What are typical fasting hours during Lent in some European countries?",
+      "answer": "Practices vary, but generally, Christians observing Lent refrain from certain foods rather than fasting specific hours. Check local traditions.",
+      "category": "food"
+    },
+    {
+      "question": "How do gratuities work in restaurants in Europe?",
+      "answer": "It varies. In some countries, service is included. In others, leave 5-10% if service isn’t already on the bill. Always check local customs.",
+      "category": "food"
+    },
+  
+    {
+      "question": "What does travel insurance typically cover?",
+      "answer": "It often covers trip cancellations, medical emergencies, lost luggage, and sometimes flight delays or interruptions. Check the policy details.",
+      "category": "insurance"
+    },
+    {
+      "question": "Is travel insurance mandatory for trips to the Middle East?",
+      "answer": "Not usually, but some countries or visas require proof of coverage. Always confirm the entry requirements before traveling.",
+      "category": "insurance"
+    },
+    {
+      "question": "Can I get insurance to cover extreme sports or adventure activities?",
+      "answer": "Yes, some insurers offer adventure sports coverage as an add-on. Make sure to confirm your activity list before purchasing.",
+      "category": "insurance"
+    },
+    {
+      "question": "How do I claim medical expenses while traveling abroad?",
+      "answer": "Keep all receipts and inform your insurer as soon as possible. Many insurers have a 24-hour help line or online portal for claims.",
+      "category": "insurance"
+    },
+    {
+      "question": "Will my existing health insurance cover me overseas?",
+      "answer": "Some health plans offer international coverage; many don’t. It’s best to confirm with your provider or purchase a dedicated travel policy.",
+      "category": "insurance"
+    },
+    {
+      "question": "Does travel insurance cover cancellations due to personal emergencies?",
+      "answer": "Most comprehensive plans include trip cancellation for covered reasons, such as illness or injury. Read the policy for specifics.",
+      "category": "insurance"
+    },
+    {
+      "question": "Can I purchase travel insurance after booking my flight and hotel?",
+      "answer": "Yes, you can typically buy it any time before departure, but earlier is better to maximize coverage for cancellations and other issues.",
+      "category": "insurance"
+    },
+    {
+      "question": "Are pandemics like COVID-19 covered under travel insurance?",
+      "answer": "Policies vary greatly. Some now offer coverage for COVID-19–related medical expenses or cancellations, but always read the fine print.",
+      "category": "insurance"
+    },
+    {
+      "question": "Is baggage loss covered by insurance?",
+      "answer": "Most standard travel insurance plans include coverage for lost or delayed baggage up to certain limits. Check the policy for exact coverage.",
+      "category": "insurance"
+    },
+    {
+      "question": "Does annual travel insurance make sense if I travel often?",
+      "answer": "If you take multiple trips a year, an annual policy can be more cost-effective than buying single-trip insurance every time.",
+      "category": "insurance"
+    },
+    {
+      "question": "How does age affect travel insurance premiums?",
+      "answer": "Premiums typically increase with age, as older travelers may be considered higher risk for medical issues.",
+      "category": "insurance"
+    },
+    {
+      "question": "Do I need separate insurance for a cruise?",
+      "answer": "Standard travel insurance may cover cruises, but some providers offer specialized cruise policies for better coverage of onboard medical costs.",
+      "category": "insurance"
+    },
+    {
+      "question": "If my flight is delayed, does travel insurance cover extra hotel nights?",
+      "answer": "Certain policies cover additional accommodation if delays are beyond your control, but coverage limits apply. Check the policy details.",
+      "category": "insurance"
+    },
+    {
+      "question": "What if I get robbed or lose my passport abroad?",
+      "answer": "Travel insurance can cover some expenses related to lost travel documents and emergency assistance, but only if explicitly included.",
+      "category": "insurance"
+    },
+    {
+      "question": "How do I find a hospital that accepts my travel insurance?",
+      "answer": "Most insurers provide a list of network hospitals or an emergency hotline to direct you. Keep your insurance ID handy while traveling.",
+      "category": "insurance"
+    },
+    {
+      "question": "Does travel insurance cover missed connections?",
+      "answer": "Many policies include missed connection coverage if it's due to reasons outside your control, such as flight delays.",
+      "category": "insurance"
+    },
+    {
+      "question": "Do I need car rental insurance if I already have travel insurance?",
+      "answer": "Travel insurance sometimes includes rental car damage coverage, but not always. Verify the details or get separate coverage if needed.",
+      "category": "insurance"
+    },
+    {
+      "question": "How soon after a medical incident must I contact the insurance provider?",
+      "answer": "As soon as possible—most insurers require immediate notification. Delaying can complicate or reduce your coverage.",
+      "category": "insurance"
+    },
+    {
+      "question": "Does travel insurance cover trip interruption due to family emergencies back home?",
+      "answer": "Many plans cover interruptions if immediate family members have a serious illness or emergency, but requirements vary by policy.",
+      "category": "insurance"
+    },
+    {
+      "question": "What documentation do I need for a travel insurance claim?",
+      "answer": "You usually need receipts, police reports (if applicable), medical records, proof of travel (itinerary), and any relevant forms.",
+      "category": "insurance"
+    },
+    {
+      "question": "Can I cancel for any reason with travel insurance?",
+      "answer": "Only if the policy specifically includes 'Cancel For Any Reason' coverage, which is usually an extra-cost add-on.",
+      "category": "insurance"
+    },
+    {
+      "question": "Does insurance cover flight re-booking fees?",
+      "answer": "Some plans reimburse re-booking fees if the cause is covered (e.g., medical emergency). Always check the specific wording.",
+      "category": "insurance"
+    },
+    {
+      "question": "Are personal belongings stolen from my hotel room covered?",
+      "answer": "Most comprehensive policies include personal belongings coverage, but only up to a certain limit, and often with a deductible.",
+      "category": "insurance"
+    },
+    {
+      "question": "Can I extend my travel insurance if I decide to stay longer?",
+      "answer": "Yes, many providers allow extensions before your coverage ends, but conditions apply. Contact your insurer for details.",
+      "category": "insurance"
+    },
+    {
+      "question": "Is pregnancy covered by travel insurance?",
+      "answer": "Some policies cover emergency complications up to a certain week of pregnancy, but routine check-ups or birth are typically excluded.",
+      "category": "insurance"
+    },
+    {
+      "question": "Does travel insurance cover repatriation of remains?",
+      "answer": "Most comprehensive policies include repatriation of remains in case of death abroad. Check the coverage limits.",
+      "category": "insurance"
+    },
+    {
+      "question": "Are there any pre-existing condition exclusions?",
+      "answer": "Yes, many insurers exclude pre-existing conditions or require a waiting period. Some plans offer waivers if you purchase early.",
+      "category": "insurance"
+    },
+    {
+      "question": "How do I know which travel insurance plan is best?",
+      "answer": "Compare coverage limits, exclusions, and pricing. Consider your specific travel needs (medical concerns, activities, destinations).",
+      "category": "insurance"
+    },
+    {
+      "question": "What if my airline goes bankrupt while I’m traveling?",
+      "answer": "Some travel insurance plans cover supplier insolvency, but it’s not standard. Look for this clause if you’re concerned.",
+      "category": "insurance"
+    },
+    {
+      "question": "Do I need separate coverage for high-value items like cameras and laptops?",
+      "answer": "Standard coverage has limits. If you’re carrying expensive electronics, you might need an add-on or specialized policy.",
+      "category": "insurance"
+    },
+    {
+      "question": "How do I prove my trip dates to the insurer?",
+      "answer": "Your flight e-tickets, hotel bookings, or travel itinerary can serve as proof of travel dates.",
+      "category": "insurance"
+    },
+    {
+      "question": "Does travel insurance cover injuries while skiing in the Alps?",
+      "answer": "Some policies exclude hazardous sports or require an extra premium. Make sure your policy specifically covers winter sports.",
+      "category": "insurance"
+    },
+    {
+      "question": "Are natural disasters covered?",
+      "answer": "Coverage for weather events or natural disasters varies by policy. Some offer trip cancellation if there’s a hurricane or severe storm warning.",
+      "category": "insurance"
+    },
+    {
+      "question": "Do I need an insurance card or just a policy number?",
+      "answer": "Having both is helpful. Many providers issue digital or physical cards. Keep your policy number and emergency contact details handy.",
+      "category": "insurance"
+    },
+    {
+      "question": "What if my visa is denied after I’ve booked my trip?",
+      "answer": "Some plans cover cancellations due to visa refusal, but this is not standard. Carefully check the cancellation reasons covered.",
+      "category": "insurance"
+    },
+    {
+      "question": "If I don’t speak the local language, can the insurer help?",
+      "answer": "Most reputable insurers have multilingual support. You can call their hotline for assistance in your preferred language.",
+      "category": "insurance"
+    },
+    {
+      "question": "Can I transfer my travel insurance if I change destinations?",
+      "answer": "It depends on the policy. Some allow changes if the new destination is within the same coverage region. Contact your insurer for details.",
+      "category": "insurance"
+    },
+    {
+      "question": "Will I get a refund on my insurance if I cancel my trip?",
+      "answer": "Many insurers do not refund policy premiums once purchased, except if you cancel within a short ‘free look’ period (if offered).",
+      "category": "insurance"
+    },
+    {
+      "question": "Are vaccinations covered by travel insurance?",
+      "answer": "Generally, vaccinations are considered preventive, so they are not covered. Insurance typically covers unforeseen medical emergencies.",
+      "category": "insurance"
+    },
+    {
+      "question": "Does my travel insurance renew automatically?",
+      "answer": "Single-trip policies end after your trip dates. Annual plans may auto-renew if you opted in, so check your policy or billing statement.",
+      "category": "insurance"
+    },
+    {
+      "question": "Are my children automatically covered under my travel insurance?",
+      "answer": "Some family plans include children under a certain age for free or at a discount. Check with your insurer for specifics.",
+      "category": "insurance"
+    },
+    {
+      "question": "How do I file a travel insurance complaint?",
+      "answer": "Contact your insurer’s customer service first. If unresolved, you can escalate to the relevant financial regulatory authority in your jurisdiction.",
+      "category": "insurance"
+    },
+  
+    {
+      "question": "What extra activities can I add to my Middle Eastern trip?",
+      "answer": "Popular options include desert safaris, camel rides, cultural city tours, and dune bashing in places like Dubai or Doha.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "How do I book a guided museum tour in Europe?",
+      "answer": "Search our ‘extra-activities’ section for guided museum tours. You can also book directly at the museum or with local tour operators.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Can I arrange a hot-air balloon ride in Cappadocia?",
+      "answer": "Absolutely. Cappadocia is famous for balloon rides at sunrise. Look under ‘extra-activities’ to find reputable providers.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Is it possible to schedule a private city tour?",
+      "answer": "Yes, we partner with local guides who offer private tours. You can customize the itinerary to your interests and schedule.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Do you offer skip-the-line tickets for popular European attractions?",
+      "answer": "Yes, we sell priority passes for some major sites like the Louvre, the Colosseum, or the Sagrada Família. Check our activities listings.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "How can I book a wine tasting tour in Europe?",
+      "answer": "Look under ‘extra-activities’ or contact our support to arrange a winery or vineyard tour, particularly in regions like Tuscany or Bordeaux.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Are there theme parks in the Middle East that I can visit?",
+      "answer": "Yes, there are world-class theme parks in the UAE, Saudi Arabia, and Qatar. Check our listings or local tourism sites for more info.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Can I rent a car for a scenic European road trip?",
+      "answer": "Yes, we offer car rental services. Make sure you have a valid driver’s license recognized in the region you’re traveling.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "What adventure sports are available in the Alps?",
+      "answer": "Popular activities include skiing, snowboarding, paragliding, and mountaineering. We list seasonal activities in our ‘extra-activities’ section.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "How do I book ferry tickets between Greek islands?",
+      "answer": "We partner with ferry operators. You can book tickets directly on our site or at local terminals, but online booking is recommended for peak season.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Can I sign up for a guided hike in the Swiss Alps?",
+      "answer": "Yes, we offer guided hiking packages with varying difficulty levels. Check the location, season, and guide availability.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Is a visa required for cross-border train trips in Europe?",
+      "answer": "Traveling within the Schengen Zone typically doesn’t require separate visas once you’re inside, but always check for any exceptions.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Are desert camping experiences safe in the Middle East?",
+      "answer": "Yes, reputable tour operators ensure safety. Always choose licensed companies and follow local guidelines to enjoy your trip securely.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Can I book a cooking class in Italy?",
+      "answer": "Absolutely! Italian cooking classes are a popular activity. Look under ‘food & drink’ experiences or ‘cooking classes’ in our listings.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Do you offer bike rental services for city tours?",
+      "answer": "Yes, in many major European and Middle Eastern cities, we have bike rentals or guided bike tours. Check the activities section for more details.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Can I join a guided photography tour to capture the northern lights?",
+      "answer": "Yes, in Nordic countries like Norway and Iceland, we list specialized tours for photographing the aurora borealis in the winter months.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "What kind of water sports can I do in the Mediterranean?",
+      "answer": "You can try snorkeling, diving, jet-skiing, and sailing. Locations like Greece, Croatia, and Turkey have numerous water-based activities.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "How do I join a pilgrimage or religious tour?",
+      "answer": "We partner with religious tour operators for destinations like Jerusalem, Mecca (for those who qualify), and Vatican City. Check specialized listings.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Are language classes available for short-term travelers?",
+      "answer": "Yes, some local schools offer short immersive courses. Check ‘learning experiences’ or ask our support to assist with booking.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Can I take a day trip from London to Paris by train?",
+      "answer": "Yes, the Eurostar connects the two cities in about 2.5 hours. We offer day-trip packages or you can book the train tickets separately.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "How do I arrange a group tour for 20+ people?",
+      "answer": "Contact our group travel department for custom itineraries, group discounts, and logistical support for large groups.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Is it possible to book a private yacht tour in the Mediterranean?",
+      "answer": "Yes, we list private yacht charters in hotspots like the French Riviera or Greek islands. Advanced booking is recommended.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "What about helicopter tours over major European cities?",
+      "answer": "We partner with providers offering scenic helicopter rides over cities like London or Barcelona. Check under ‘aerial tours.’",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Do you offer flexible city passes with multiple attractions?",
+      "answer": "Yes, many European cities have tourist passes that include entry to museums and landmarks. Search ‘city pass’ in our listings.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Can I book adrenaline sports like bungee jumping or skydiving?",
+      "answer": "Yes, we list providers for various adrenaline activities. Always check the participant restrictions, such as weight or age limits.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "How can I book a Northern Africa excursion from Europe?",
+      "answer": "Ferries and flights connect Southern Europe to Northern Africa. We offer multi-destination packages or day trips from places like Spain to Morocco.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Is it possible to arrange a personal shopper or fashion tour in Europe?",
+      "answer": "Yes, some cities like Paris and Milan offer personal shopper experiences or fashion-based tours. Contact support to customize.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "How do I book a romantic gondola ride in Venice?",
+      "answer": "We list gondola tour options in Venice under ‘romantic activities.’ You can also purchase tickets onsite, but booking ahead ensures availability.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Are there group discounts for bus tours?",
+      "answer": "Yes, many bus tour operators offer discounts for group bookings. Search our site for group rates or contact us directly.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Is it recommended to hire a local guide when traveling off the beaten path?",
+      "answer": "Yes, a local guide can offer unique insights and ensure safety in unfamiliar areas. We can connect you with verified guides.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Where can I find cultural workshops, like calligraphy or pottery?",
+      "answer": "Major tourist hubs in Europe and the Middle East often feature cultural workshops. Check our activities section or ask your hotel concierge.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Can I combine multiple activities in one itinerary?",
+      "answer": "Yes, we can bundle activities like tours, classes, or events into a customized itinerary. Contact our planning service for help.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "What about winter activities in places like Lapland?",
+      "answer": "Lapland offers reindeer safaris, snowmobile tours, and ice fishing. Check our winter excursions section for available packages.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "How do I secure tickets for famous shows or concerts in Europe?",
+      "answer": "We partner with ticketing agencies. Check our ‘entertainment & shows’ section or request help from our support team.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Are day passes available for beach resorts in the Middle East?",
+      "answer": "Yes, some resorts offer day passes that include beach and pool access. Search our site or inquire directly with the resort.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Can I plan a hiking trip through the Scottish Highlands?",
+      "answer": "Yes, we have self-guided and guided hiking tours. Check our listings for routes, difficulty levels, and accommodations.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "What about volunteering opportunities overseas?",
+      "answer": "We have partnerships with select volunteer organizations. Look under ‘volunteering’ or contact support for further information.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Can I rent a scooter or moped in European cities?",
+      "answer": "Yes, many cities have rental services for scooters and mopeds. Check license requirements and driving rules for each country.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Do you offer guided pub crawls or nightlife tours?",
+      "answer": "Yes, we have nightlife tours in major European cities. Look for 'pub crawls' or 'nightlife experiences' in the activities section.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "How do I arrange a skiing vacation package?",
+      "answer": "Check our winter sports bundles, which often include lift passes, equipment rental, and accommodation. Alternatively, customize your package.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Are photography workshops available in scenic Middle Eastern locations?",
+      "answer": "Yes, we list photography workshops in places like Petra, Wadi Rum, and the UAE desert. Look under our ‘photography experiences.’",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Can I book a cooking and market tour on the same day?",
+      "answer": "Certainly. Many providers combine market visits with cooking classes. Look for combined packages or contact us to build a custom schedule.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "Is there a dress code for mosque tours in the Middle East?",
+      "answer": "Yes, modest attire covering arms and legs is usually required. Women may need to cover their hair. Check local guidelines before visiting.",
+      "category": "extra-activities"
+    },
+    {
+      "question": "What if my scheduled activity is canceled due to weather?",
+      "answer": "We’ll help reschedule or refund you, depending on the provider’s policy. We recommend checking weather forecasts before booking outdoor activities.",
+      "category": "extra-activities"
+    },
+  
+    {
+      "question": "Which currency should I carry when traveling between European countries?",
+      "answer": "Most EU countries use the Euro, but some have their own currency. Always confirm before you travel and have some local cash on hand.",
+      "category": "other"
+    },
+    {
+      "question": "Do I need to know the local language to travel around?",
+      "answer": "It's helpful, but not strictly necessary. English is widely spoken in many tourist areas across Europe and the Middle East.",
+      "category": "other"
+    },
+    {
+      "question": "How do I handle power outlets and adapters?",
+      "answer": "Europe mostly uses Type C or F sockets (230V), while the Middle East can vary. Invest in a universal adapter to be safe.",
+      "category": "other"
+    },
+    {
+      "question": "Are there any restrictions on drone usage for personal photography?",
+      "answer": "Yes, many countries require drone permits or have restricted areas. Check local aviation authority regulations before flying.",
+      "category": "other"
+    },
+    {
+      "question": "Do you provide 24/7 customer support?",
+      "answer": "We offer round-the-clock assistance via phone, email, or live chat for any travel-related emergencies or queries.",
+      "category": "other"
+    },
+    {
+      "question": "Is it safe to travel alone in major European cities?",
+      "answer": "Generally, yes. Use common sense, watch your belongings, and stay aware of scams in tourist hotspots, just as you would anywhere else.",
+      "category": "other"
+    },
+    {
+      "question": "What if I lose my phone while traveling?",
+      "answer": "Contact your service provider to block it. You can log in to our site from any device to access your bookings. Keep printed copies of vital info.",
+      "category": "other"
+    },
+    {
+      "question": "How do I deal with jet lag between Europe and the Middle East?",
+      "answer": "The time difference is typically small (1–2 hours). Try adjusting sleep schedules gradually and stay hydrated to minimize jet lag.",
+      "category": "other"
+    },
+    {
+      "question": "Are there age restrictions for unaccompanied minors on your tours?",
+      "answer": "Yes, most tours require adults for minors under 18. Some family-friendly tours allow teens. Check each activity’s policy.",
+      "category": "other"
+    },
+    {
+      "question": "Can I use my home country SIM card while abroad?",
+      "answer": "Yes, but roaming charges may apply. Buying a local SIM or using an international roaming plan can be more cost-effective.",
+      "category": "other"
+    },
+    {
+      "question": "Do you support multiple languages on your website?",
+      "answer": "Yes, our website is available in several languages. Use the language selector at the top-right corner to choose your preferred option.",
+      "category": "other"
+    },
+    {
+      "question": "Are free walking tours really free?",
+      "answer": "Many are tip-based. Guides typically rely on tips, so it’s courteous to give a contribution if you enjoyed the tour.",
+      "category": "other"
+    },
+    {
+      "question": "What documentation is needed for traveling with children?",
+      "answer": "You’ll need passports for international travel and possibly birth certificates or a parental consent letter if traveling with one parent.",
+      "category": "other"
+    },
+    {
+      "question": "How can I keep my valuables secure while traveling?",
+      "answer": "Use hotel safes, avoid carrying large sums of cash, and consider anti-theft bags or pouches for passports and cards.",
+      "category": "other"
+    },
+    {
+      "question": "What mobile apps are helpful for traveling in Europe and the Middle East?",
+      "answer": "Popular options include translation apps, public transport route finders, currency converters, and ride-hailing apps like Uber or local equivalents.",
+      "category": "other"
+    },
+    {
+      "question": "Are ATMs easily accessible?",
+      "answer": "Yes, in major cities, ATMs are widespread. Rural areas might have fewer, so plan ahead for cash withdrawals.",
+      "category": "other"
+    },
+    {
+      "question": "How do I handle emergencies abroad (e.g., stolen passport)?",
+      "answer": "Contact local police, your embassy, and your insurer if you have coverage for lost documents. We also have a 24/7 support line to guide you.",
+      "category": "other"
+    },
+    {
+      "question": "Is bartering common in European shops?",
+      "answer": "No, most shops have fixed prices. Bartering might be acceptable in some markets, but it’s not generally practiced in standard retail stores.",
+      "category": "other"
+    },
+    {
+      "question": "Can I drink alcohol in public places in the Middle East?",
+      "answer": "Regulations vary. In some countries, public consumption is illegal. Always check local laws to avoid fines or legal issues.",
+      "category": "other"
+    },
+    {
+      "question": "Do I need to bring my own towels to hotels or hostels?",
+      "answer": "Hotels typically provide towels. Hostels may charge a small fee or require you to bring your own. Check the property's details before booking.",
+      "category": "other"
+    },
+    {
+      "question": "How can I find a local emergency number?",
+      "answer": "In Europe, 112 is the universal emergency number. In the Middle East, it varies by country. Check your destination’s emergency info.",
+      "category": "other"
+    },
+    {
+      "question": "Is public transportation reliable in major European cities?",
+      "answer": "Yes, most cities have efficient metro, bus, or tram systems. Check official schedules or apps for real-time updates.",
+      "category": "other"
+    },
+    {
+      "question": "What is the appropriate dress code in conservative areas?",
+      "answer": "Covering shoulders and knees is advisable in conservative regions. Be mindful of local customs, especially when visiting religious sites.",
+      "category": "other"
+    },
+    {
+      "question": "Can I request assistance for travelers with disabilities?",
+      "answer": "Yes, contact us or the airline/hotel directly for help with wheelchair access, guide services, or special room accommodations.",
+      "category": "other"
+    },
+    {
+      "question": "Are there safe drinking spots for tap water in the Middle East?",
+      "answer": "It’s best to confirm locally. Some places have potable tap water, while others advise using bottled water to be safe.",
+      "category": "other"
+    },
+    {
+      "question": "Does your platform support group expense splitting?",
+      "answer": "We don’t offer a built-in expense splitter, but you can pay separately for each traveler or use third-party apps to manage group costs.",
+      "category": "other"
+    },
+    {
+      "question": "How do I protect myself from pickpockets in busy tourist areas?",
+      "answer": "Stay alert, don’t flash valuables, use anti-theft bags, and keep your wallet in a front pocket. Busy areas can attract petty thieves.",
+      "category": "other"
+    },
+    {
+      "question": "Are travelers’ checks still used in Europe or the Middle East?",
+      "answer": "They’re not very common anymore. Most travelers rely on credit cards or ATMs for cash withdrawals.",
+      "category": "other"
+    },
+    {
+      "question": "Can I access free Wi-Fi in public places?",
+      "answer": "Many cities offer free Wi-Fi hotspots in public squares or libraries. Cafés and hotels also typically provide Wi-Fi for customers.",
+      "category": "other"
+    },
+    {
+      "question": "How do I tip taxi drivers?",
+      "answer": "Rounding up the fare or adding a small tip is common. In some places, no tip is necessary if a service charge is already included.",
+      "category": "other"
+    },
+    {
+      "question": "Do I need an international driver’s license for car rentals?",
+      "answer": "Many European countries and some Middle Eastern countries require it if your license is not in English or not recognized locally.",
+      "category": "other"
+    },
+    {
+      "question": "What should I do if I suspect credit card fraud while traveling?",
+      "answer": "Contact your bank immediately to freeze the card. Then file a dispute for any unauthorized charges and use an alternative payment method.",
+      "category": "other"
+    },
+    {
+      "question": "Are there any restrictions on photography at historical sites?",
+      "answer": "Some museums, palaces, and religious sites prohibit photography or require a permit. Always check posted signs or ask staff.",
+      "category": "other"
+    },
+    {
+      "question": "How can I stay connected while traveling without incurring large roaming fees?",
+      "answer": "Consider local SIM cards or portable Wi-Fi devices. Many hotels also offer free Wi-Fi. Some phone plans include international data packages.",
+      "category": "other"
+    },
+    {
+      "question": "Will my electronics work without a voltage converter?",
+      "answer": "Check if your device is dual-voltage (110–240V). If not, you’ll need a converter. You’ll also need a plug adapter for the local socket type.",
+      "category": "other"
+    },
+    {
+      "question": "How do I find accurate local travel information?",
+      "answer": "Our website and app provide destination guides. Local tourism boards and official government travel sites are also reliable sources.",
+      "category": "other"
+    },
+    {
+      "question": "What is the best time to travel to avoid large tourist crowds?",
+      "answer": "Shoulder seasons (spring and fall) often have fewer crowds and better prices compared to peak summer months and holiday seasons.",
+      "category": "other"
+    },
+    {
+      "question": "Is traveling by train faster than flying in some parts of Europe?",
+      "answer": "High-speed trains can be more time-efficient for short to medium distances, especially when factoring in airport security and transfers.",
+      "category": "other"
+    },
+    {
+      "question": "Are plug-in hairdryers and straighteners allowed in hotel rooms?",
+      "answer": "Yes, but check voltage compatibility. Many hotels provide hairdryers, so confirm to avoid carrying extra items.",
+      "category": "other"
+    },
+    {
+      "question": "How do I recycle or dispose of waste properly in different countries?",
+      "answer": "Recycling systems vary widely. Look for color-coded bins and follow local guidelines. Some places heavily fine improper disposal.",
+      "category": "other"
+    },
+    {
+      "question": "What if I can’t check in online for my flight?",
+      "answer": "Go to the airport early to check in at the counter. Some airlines may require in-person check-in for certain travel documents.",
+      "category": "other"
+    },
+    {
+      "question": "Are there any visa-free travel agreements for my nationality?",
+      "answer": "This depends on your passport. Always check official government websites or ask our support for basic guidance.",
+      "category": "other"
+    }
+  ]
+  
