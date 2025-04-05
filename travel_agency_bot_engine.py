@@ -94,7 +94,6 @@ class TravelAgencyBot:
 
 
     def format_context(self,documents):
-        ##TODO convert listed documents to context that can be fed to LLM -e.g. text. Recommended splitting docs with html tags
         context = ""
         for i, meta in enumerate(documents):
             context += f"<Relevant Document #{i+1}>\n{documents[i]}\n</Relevant Document #{i+1}>\n"
