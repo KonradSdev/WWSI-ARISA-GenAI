@@ -24,11 +24,11 @@ class TravelAgencyBot:
         self.collection = self.chroma_client.get_or_create_collection(name=self.SELECTED_COLLECTION , embedding_function=self.openai_ef)
         self.faq_df = self.read_faq(self.faq_path)
         self.ingest_faq_data(self.faq_df, self.collection)
+        
+    def process_user_input(self,user_input):
         self.question = user_input
-
         # Load the model, here we use our base sized model
         self.model = CrossEncoder("mixedbread-ai/mxbai-rerank-xsmall-v1")
-     
         self.n_results = 5
         self.results = self.collection.query(query_texts=[self.question], n_results=self.n_results)
         if self.toxic_behaviour_check():
@@ -94,6 +94,7 @@ class TravelAgencyBot:
 
 
     def format_context(self,documents):
+
         context = ""
         for i, meta in enumerate(documents):
             context += f"<Relevant Document #{i+1}>\n{documents[i]}\n</Relevant Document #{i+1}>\n"
