@@ -4,6 +4,8 @@ import streamlit as st
 from datetime import datetime
 import travel_agency_bot_engine as chatbot
 
+chatbot_instance = chatbot.TravelAgencyBot()
+
 # Set page configuration
 st.set_page_config(
     page_title="Your travel assistant - NomadAI",
@@ -87,7 +89,7 @@ def create_new_chat(default_header="New conversation"):
 
 def chatbot_response(user_input, conversation_id):
     # Simulate a response from the chatbot
-    chatbot_instance = chatbot.TravelAgencyBot(user_input)
+    chatbot_instance.process_user_input(user_input)
     response = {
         "conversation_id": conversation_id,
         "response": f"{chatbot_instance.provide_answer()}"
