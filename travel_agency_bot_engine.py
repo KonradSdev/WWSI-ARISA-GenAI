@@ -11,7 +11,7 @@ from transformers import pipeline
 import toxic_beahviours_analyzer
 
 class TravelAgencyBot:
-    def __init__(self,user_input):
+    def __init__(self):
         load_dotenv()
         openai.api_key = OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
         self.client = openai.Client()
