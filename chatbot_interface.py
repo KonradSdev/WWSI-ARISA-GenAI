@@ -3,8 +3,11 @@ import uuid
 import streamlit as st
 from datetime import datetime
 import travel_agency_bot_engine as chatbot
+import memory as db
 
 chatbot_instance = chatbot.TravelAgencyBot()
+db_instance = db.ChatHistoryDB("chat_history.db")
+db_instance.create_table("chat_history")
 
 # Set page configuration
 st.set_page_config(
@@ -52,30 +55,36 @@ st.markdown("""
 
 # list of created chats (history)
 if "chats" not in st.session_state:
-    st.session_state["chats"]  = [
-       {
-           "conversation_id": uuid.uuid4(),
-           "header": "Gdzie pojechać...",
-           "create_date": "2025-03-01T12:00:00Z",
-           "history": [
-               {
-                     "role": "user",
-                     "content": "Gdzie pojechać na wakacje?",
-                     "create_date": "2025-03-01T12:00:00Z"
-                },
-                {
-                     "role": "assistant",
-                     "content": "Na wakacje polecam wybrać się do Grecji lub Hiszpanii. Oba kraje oferują piękne plaże i wiele atrakcji turystycznych.",
-                     "create_date": "2025-03-01T12:00:00Z"
-               }
-           ]
-       },
-       {
-           "conversation_id": uuid.uuid4(),
-           "header": "Gdzie tanie loty?",
-           "create_date": "2025-03-02T12:00:00Z",
-       }
-    ]
+    history = db_instance.read_all_chats()
+    if history:
+        st.session_state["chats"] = history
+    else:
+        st.session_state["chats"] = []
+    
+    # st.session_state["chats"]  = [
+    #    {
+    #        "conversation_id": uuid.uuid4(),
+    #        "header": "Gdzie pojechać...",
+    #        "create_date": "2025-03-01T12:00:00Z",
+    #        "history": [
+    #            {
+    #                  "role": "user",
+    #                  "content": "Gdzie pojechać na wakacje?",
+    #                  "create_date": "2025-03-01T12:00:00Z"
+    #             },
+    #             {
+    #                  "role": "assistant",
+    #                  "content": "Na wakacje polecam wybrać się do Grecji lub Hiszpanii. Oba kraje oferują piękne plaże i wiele atrakcji turystycznych.",
+    #                  "create_date": "2025-03-01T12:00:00Z"
+    #            }
+    #        ]
+    #    },
+    #    {
+    #        "conversation_id": uuid.uuid4(),
+    #        "header": "Gdzie tanie loty?",
+    #        "create_date": "2025-03-02T12:00:00Z",
+    #    }
+    # ]
 
 def create_new_chat(default_header="New conversation"):
     new_chat = {
@@ -85,7 +94,7 @@ def create_new_chat(default_header="New conversation"):
         "history": []
     }
     st.session_state["chats"].append(new_chat)
-    st.session_state["current_chat"] = new_chat    
+    st.session_state["current_chat"] = new_chat
 
 def chatbot_response(user_input, conversation_id):
     # Simulate a response from the chatbot
@@ -158,6 +167,9 @@ with st.container():
 
                 # Add AI message to the display
                 st.session_state["current_chat"]["history"].append({"role": "assistant", "content": response["response"], "create_date": datetime.now().isoformat()})
+                
+                #Save chat history to the database (passing it as a list)
+                db_instance.save_chat_history([st.session_state["current_chat"]])
 
                 # Display typing effect
                 full_response = response["response"]

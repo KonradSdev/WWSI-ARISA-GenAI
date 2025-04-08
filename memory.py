@@ -1,6 +1,7 @@
 from datetime import datetime
 import sqlite3
 import uuid
+import json
 
 class ChatHistoryDB:
     """
@@ -134,6 +135,7 @@ if __name__ == "__main__":
            "conversation_id": uuid.uuid4(),
            "header": "Gdzie tanie loty?",
            "create_date": "2025-03-02T12:00:00Z",
+           "history": []
        }
     ]
 
