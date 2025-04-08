@@ -3,16 +3,18 @@ import uuid
 import streamlit as st
 from datetime import datetime
 import travel_agency_bot_engine as chatbot
+from PIL import Image
 import memory as db
 
 chatbot_instance = chatbot.TravelAgencyBot()
 db_instance = db.ChatHistoryDB("chat_history.db")
 db_instance.create_table("chat_history")
 
+icon = Image.open('static_files/logo.png')
 # Set page configuration
 st.set_page_config(
-    page_title="Your travel assistant - NomadAI",
-    page_icon="🤖👨‍🚀🚀",
+    page_title="Your travel assistant - Nomad AI",
+    page_icon=icon,
     layout="centered"
 )
 
@@ -68,7 +70,7 @@ if "chats" not in st.session_state:
     #        "create_date": "2025-03-01T12:00:00Z",
     #        "history": [
     #            {
-    #                  "role": "user",
+    #                  "role": "human",
     #                  "content": "Gdzie pojechać na wakacje?",
     #                  "create_date": "2025-03-01T12:00:00Z"
     #             },
@@ -108,7 +110,12 @@ def chatbot_response(user_input, conversation_id):
 ######################################################################################################
 # Sidebar for chat history and new conversation creation
 with st.sidebar:
-    st.header("NomadAI", divider=True)
+    col1, col2 = st.columns(2)
+    with col1:
+        st.image(icon, width=80, use_container_width=False)
+    with col2:
+        st.markdown("<h1 style='text-align: center;'>Nomad AI</h1>", unsafe_allow_html=True)
+    st.markdown("<hr>", unsafe_allow_html=True)
     if st.button("Create new conversation"):
         create_new_chat()
     st.header("Chat history")
@@ -120,7 +127,7 @@ with st.sidebar:
 
 #####################################################################################################
 # Main chat area
-st.title("Your travel assistant - NomadAI")
+st.title("Your travel assistant - Nomad AI")
 st.write("Hello traveler! I am your travel assistant. How can I help you today?")
 
 with st.container():
