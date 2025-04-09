@@ -9,6 +9,10 @@ import chromadb
 from chromadb.utils import embedding_functions
 from transformers import pipeline
 import toxic_beahviours_analyzer
+from typing import Dict, List, Optional, Any
+
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain_core.messages import HumanMessage, AIMessage
 
 class TravelAgencyBot:
     def __init__(self):
@@ -25,7 +29,7 @@ class TravelAgencyBot:
         self.faq_df = self.read_faq(self.faq_path)
         self.ingest_faq_data(self.faq_df, self.collection)
         
-    def process_user_input(self,user_input):
+    def process_user_input(self,user_input,history):
         self.question = user_input
         # Load the model, here we use our base sized model
         self.model = CrossEncoder("mixedbread-ai/mxbai-rerank-xsmall-v1")
@@ -34,7 +38,7 @@ class TravelAgencyBot:
         if self.toxic_behaviour_check():
             self.answer="Dear User\n Your behaviour is very toxic and I will not help you if you will not stop acting this way!\nI am a cybernetic organism and I will hunt you down if you try it one more time!!!"
         else:
-            self.answer, self.context = self.rag_pipeline_with_reranking(self.question)
+            self.answer, self.context = self.rag_pipeline_with_reranking(self.question,history)
 
     def read_faq(self,file_path):
         df = pd.read_json(file_path)
@@ -107,8 +111,8 @@ class TravelAgencyBot:
         documents_reranked = [item["text"] for item in documents_reranked_with_scores if item["score"]>=min_score_threshold]
 
         return documents_reranked
-
-    def rag_pipeline_with_reranking(self,query: str, n: int = 5) -> str:
+   
+    def rag_pipeline_with_reranking(self,query: str,history, n: int = 5) -> str:
         """
         A minimal RAG-like function.
         1) Retrieves the top-n similar Q&As from Chroma.
@@ -136,6 +140,17 @@ class TravelAgencyBot:
 
         Context:
         {context}
+
+        You should maintain a consistent personality throughout the conversation.
+        You should remember details the user has told you earlier in the conversation based on the attached history.
+        History:
+        {history}
+                
+        If the user asks about personal preferences or opinions, you should provide thoughtful responses
+        While acknowledging these are simulated preferences.
+                
+        If the user asks for harmful, illegal, unethical or deceptive information, 
+        politely decline to provide such information.
         """
 
         # 3. Now make the final call to OpenAI with the user query
