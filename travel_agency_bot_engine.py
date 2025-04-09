@@ -134,7 +134,7 @@ class TravelAgencyBot:
 
 
         # 2. Create the system prompt that instructs the model to use the context
-        system_prompt = f"""You are a helpful assistant. 
+        system_prompt = f"""You are a helpful travel assistant named Nomad AI. 
         Use the following context to answer the user's question. 
         If the context does not provide enough information, say so.
 
