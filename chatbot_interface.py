@@ -100,7 +100,7 @@ def create_new_chat(default_header="New conversation"):
 
 def chatbot_response(user_input, conversation_id):
     # Simulate a response from the chatbot
-    chatbot_instance.process_user_input(user_input)
+    chatbot_instance.process_user_input(user_input,st.session_state["current_chat"]["history"])
     response = {
         "conversation_id": conversation_id,
         "response": f"{chatbot_instance.provide_answer()}"
