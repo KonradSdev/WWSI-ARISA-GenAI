@@ -25,7 +25,7 @@ def fetch_trip_details(
         city: City to search for (e.g., "Rome")
         start_date: Trip start date in YYYY-MM-DD format
         trip_id: Numeric ID of the trip (index in the list)
-        count_of_days: Length of the trip
+        count_of_days: Length of the trip in days
         cost: Cost in EUR
         extra_activities: Extra activities information
         trip_details: Description about trip details
