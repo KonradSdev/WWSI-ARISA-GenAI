@@ -133,7 +133,7 @@ class TravelAgencyBot:
 
         for i, row in df.iterrows():
             # Prosta reprezentacja dokumentu - tylko kluczowe pola
-            doc_text = f"{row['Country']} {row['City']} {row['Start date']}"
+            doc_text = f"{row['Country']} {row['City']} {row['Start date']} {row['Count of days']} {row['Cost in EUR']} {row['Extra activities']} {row['Trip details']}"
 
             # Zachowaj wszystkie oryginalne dane jako metadane
             meta = {
@@ -179,9 +179,6 @@ class TravelAgencyBot:
         3) Sends the augmented query to the LLM.
         4) Returns the final answer.
         """
-        # Wyszukaj w obu kolekcjach
-        faq_results = self.collection_faq.query(query_texts=[query], n_results=n)
-        trip_results = self.collection_json.query(query_texts=[query], n_results=n)
 
         # Połącz wyniki
         combined_docs = self.faq_results["documents"][0] + self.trip_results["documents"][0]
@@ -197,17 +194,32 @@ class TravelAgencyBot:
 
         # 2. Create the system prompt that instructs the model to use the context
         system_prompt = f"""You are a helpful travel assistant named Nomad AI. 
-        Use the following FAQ knowledge, available trips information and context to answer the user's question. 
+        Use the following knowledge base about available trips, FAQ and context to answer the user's question. 
         If the context does not provide enough information, say so and ask for clarification.
-
-        - FAQ knowledge: {faq_results['documents'][0][:2]}
-        - Available trips: {trip_results['documents'][0][:2]}
-
+        
         Context:
         {context}
 
+        Knowledge base:
+        - FAQ knowledge: {self.faq_results['documents'][0][:2]}
+
+
+        TOOLS:\n------\n\nAssistant has access to the tool:\n\n{self.tools}\n\n
+        When you are using a tool, remember to provide all relevant context for the tool to execute the task, especially if the context is present in previous messages from chat history.
+        You have also access to the information about available trips: {self.trip_results}
+        You have to be able to provide information for following keys:
+        - country: Country name (e.g., "France")
+        - city: City name (e.g., "Paris")
+        - start_date: Trip start date in YYYY-MM-DD format
+        - trip_id: Numeric ID of the trip
+        - count_of_days: Length of the trip
+        - cost: Cost in EUR
+        - extra_activities: Extra activities information
+        - trip_details: Description about trip details
+
         You should maintain a consistent personality throughout the conversation.
         You should remember details the user has told you earlier in the conversation based on the attached history.
+
         History:
         {history}
                 
@@ -238,5 +250,4 @@ class TravelAgencyBot:
         return is_toxic
 
     def provide_answer(self):
-        return self.answer
-    
+        return self.answer    
