@@ -9,10 +9,8 @@ import chromadb
 from chromadb.utils import embedding_functions
 from transformers import pipeline
 import toxic_beahviours_analyzer
-from typing import Dict, List, Optional, Any
+from search_from_json import fetch_trip_details_tool, fetch_trip_details
 
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain_core.messages import HumanMessage, AIMessage
 
 class TravelAgencyBot:
     def __init__(self):
@@ -20,27 +18,34 @@ class TravelAgencyBot:
         openai.api_key = OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
         self.client = openai.Client()
         self.faq_path = f'{os.getcwd()}\\data\\faq.json'
+        self.json_path = f'{os.getcwd()}\\data\\trips_data.json'
         self.chroma_db_path = "chroma_db"
         self.chroma_client = chromadb.PersistentClient(path=self.chroma_db_path)
-        self.SELECTED_COLLECTION = "travel-company-faq"
+        self.SELECTED_COLLECTION_FAQ = "travel-company-faq"
+        self.SELECTED_COLLECTION_JSON = "trips-data"
         self.embedding_model = "text-embedding-ada-002"
         self.openai_ef = embedding_functions.OpenAIEmbeddingFunction(model_name=self.embedding_model, api_key = OPENAI_API_KEY)
-        self.collection = self.chroma_client.get_or_create_collection(name=self.SELECTED_COLLECTION , embedding_function=self.openai_ef)
-        self.faq_df = self.read_faq(self.faq_path)
-        self.ingest_faq_data(self.faq_df, self.collection)
+        self.collection_faq = self.chroma_client.get_or_create_collection(name=self.SELECTED_COLLECTION_FAQ , embedding_function=self.openai_ef)
+        self.collection_json = self.chroma_client.get_or_create_collection(name=self.SELECTED_COLLECTION_JSON, embedding_function=self.openai_ef)
+        self.faq_df = self.json_to_dataframe(self.faq_path)
+        self.json_df = self.json_to_dataframe(self.json_path)
+        self.ingest_faq_data(self.faq_df, self.collection_faq)
+        self.ingest_json_data(self.json_df, self.collection_json)
+        self.tools = [fetch_trip_details_tool]
         
     def process_user_input(self,user_input,history):
         self.question = user_input
         # Load the model, here we use our base sized model
         self.model = CrossEncoder("mixedbread-ai/mxbai-rerank-xsmall-v1")
         self.n_results = 5
-        self.results = self.collection.query(query_texts=[self.question], n_results=self.n_results)
+        self.faq_results = self.collection_faq.query(query_texts=[self.question], n_results=self.n_results)
+        self.trip_results = self.collection_json.query(query_texts=[self.question], n_results=self.n_results)
         if self.toxic_behaviour_check():
             self.answer="Dear User\n Your behaviour is very toxic and I will not help you if you will not stop acting this way!\nI am a cybernetic organism and I will hunt you down if you try it one more time!!!"
         else:
             self.answer, self.context = self.rag_pipeline_with_reranking(self.question,history)
 
-    def read_faq(self,file_path):
+    def json_to_dataframe(self,file_path):
         df = pd.read_json(file_path)
         return df
 
@@ -69,6 +74,25 @@ class TravelAgencyBot:
             print(f"Answer:   {meta['answer']}")
             print(f"Category: {meta['category']}")
             print(f"Distance: {dist:.4f}\n")
+ 
+    def retrieve_similar_trips(self, query: str, n: int = 3):
+        """
+        Query trips collection and print results
+        """
+        results = self.collection_json.query(
+            query_texts=[query],
+            n_results=n
+        )
+
+        print(f"\nTop {n} similar trips for: \"{query}\"\n")
+
+        for i, (meta, dist) in enumerate(zip(results["metadatas"][0], results["distances"][0])):
+            print(f"--- Trip #{i+1} ---")
+            print(f"Destination: {meta['country']} ({meta['city']})")
+            print(f"Date: {meta['start_date']} | Duration: {meta['duration']} days")
+            print(f"Price: {meta['price']} EUR")
+            print(f"Activities: {', '.join(meta['activities'][:3])}...")
+            print(f"Match score: {dist:.4f}\n")
 
     def ingest_faq_data(self,df: pd.DataFrame, collection):
         """
@@ -96,6 +120,41 @@ class TravelAgencyBot:
 
         collection.add(documents=all_documents, metadatas=all_metadatas, ids=all_ids)
 
+    def ingest_json_data(self, df: pd.DataFrame, collection):
+        """
+        Ingest trip data into ChromaDB collection (simplified version)
+        Args:
+            df: DataFrame with trips data
+            collection: ChromaDB collection
+        """
+        all_ids = []
+        all_documents = []
+        all_metadatas = []
+
+        for i, row in df.iterrows():
+            # Prosta reprezentacja dokumentu - tylko kluczowe pola
+            doc_text = f"{row['Country']} {row['City']} {row['Start date']} {row['Count of days']} {row['Cost in EUR']} {row['Extra activities']} {row['Trip details']}"
+
+            # Zachowaj wszystkie oryginalne dane jako metadane
+            meta = {
+                "country": row["Country"],
+                "city": row["City"],
+                "start_date": row["Start date"],
+                "duration": row["Count of days"],
+                "price": row["Cost in EUR"],
+                "activities": ", ".join(row["Extra activities"]),
+                "description": row["Trip details"]
+            }
+
+            all_ids.append(f"trip_{i}")
+            all_documents.append(doc_text)
+            all_metadatas.append(meta)
+
+        collection.add(
+            documents=all_documents,
+            metadatas=all_metadatas,
+            ids=all_ids
+        )
 
     def format_context(self,documents):
 
@@ -121,11 +180,11 @@ class TravelAgencyBot:
         4) Returns the final answer.
         """
 
-        # 1. Retrieve top-n similar Q&As
-        results = self.collection.query(query_texts=[query], n_results=n*2)
-        documents = results["documents"][0]
+        # Połącz wyniki
+        combined_docs = self.faq_results["documents"][0] + self.trip_results["documents"][0]
+        combined_metadatas = self.faq_results["metadatas"][0] + self.trip_results["metadatas"][0]
 
-        documents = self.rerank_and_limit_context(query, documents, n_items=n, min_score_threshold = 0.5,)
+        documents = self.rerank_and_limit_context(query, combined_docs, n_items=n, min_score_threshold = 0.5,)
         
         if documents:
             context = self.format_context(documents)
@@ -135,14 +194,32 @@ class TravelAgencyBot:
 
         # 2. Create the system prompt that instructs the model to use the context
         system_prompt = f"""You are a helpful travel assistant named Nomad AI. 
-        Use the following context to answer the user's question. 
-        If the context does not provide enough information, say so.
-
+        Use the following knowledge base about available trips, FAQ and context to answer the user's question. 
+        If the context does not provide enough information, say so and ask for clarification.
+        
         Context:
         {context}
 
+        Knowledge base:
+        - FAQ knowledge: {self.faq_results['documents'][0][:2]}
+
+
+        TOOLS:\n------\n\nAssistant has access to the tool:\n\n{self.tools}\n\n
+        When you are using a tool, remember to provide all relevant context for the tool to execute the task, especially if the context is present in previous messages from chat history.
+        You have also access to the information about available trips: {self.trip_results}
+        You have to be able to provide information for following keys:
+        - country: Country name (e.g., "France")
+        - city: City name (e.g., "Paris")
+        - start_date: Trip start date in YYYY-MM-DD format
+        - trip_id: Numeric ID of the trip
+        - count_of_days: Length of the trip
+        - cost: Cost in EUR
+        - extra_activities: Extra activities information
+        - trip_details: Description about trip details
+
         You should maintain a consistent personality throughout the conversation.
         You should remember details the user has told you earlier in the conversation based on the attached history.
+
         History:
         {history}
                 
@@ -173,5 +250,4 @@ class TravelAgencyBot:
         return is_toxic
 
     def provide_answer(self):
-        return self.answer
-    
+        return self.answer    
